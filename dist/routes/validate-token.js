@@ -16,8 +16,7 @@ const validateToken = (req, res, next) => {
             res.status(401).json({ msg: 'Token no valido' });
         }
     }
-    else {
+    else
         res.status(401).json({ msg: 'Acceso denegado' });
-    }
 };
 exports.default = validateToken;
